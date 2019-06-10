@@ -14,9 +14,14 @@
         Generate Barcode
       </button> -->
       <div class="barcode-img-container">
+        <h3>Bar Code</h3>
         <barcode :value="barcodeValue">
-          No barcode generated
+          No Barcode generated
         </barcode>
+      </div>
+      <div class="qrcode-img-container">
+        <h3>QR Code</h3>
+        <qrcode :value="barcodeValue" level="H" />
       </div>
     </div>
   </div>
@@ -24,10 +29,12 @@
 
 <script>
 import VueBarcode from 'vue-barcode'
+import QrcodeVue from 'qrcode.vue'
 
 export default {
   components: {
-    'barcode': VueBarcode
+    'barcode': VueBarcode,
+    'qrcode': QrcodeVue
   },
   data() {
     return {
