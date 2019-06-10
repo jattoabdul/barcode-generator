@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.text-input {
+  margin: 1rem 0;
+
+  input {
+    width: 25vw;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.barcode-img-container {
+  margin-top: 1rem;
+}
